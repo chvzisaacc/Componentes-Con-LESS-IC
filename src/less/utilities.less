@@ -1,0 +1,48 @@
+.flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button(@bg: @color-accent, @color: @color-dark) {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: @bg;
+  color: @color;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: @radius;
+  transition: filter 0.2s, transform 0.2s;
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+  }
+}
+
+.tablet-up(@rules) {
+  @media (min-width: @bp-tablet) {
+    @rules();
+  }
+}
+
+.desktop-up(@rules) {
+  @media (min-width: @bp-desktop) {
+    @rules();
+  }
+}
+
+.full-center {
+  .flex-center();
+}
+
+.full-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.warning {
+  color: #b91c1c;
+  font-weight: bold;
+}

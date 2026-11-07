@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/less/style.less" />
+</head>
+
+<body>
+    <header>
+        <nav data-rol="navbar" class="navbar">
+            <a class="navbar-brand" href="#inicio">Portales Web II</a>
+            <input type="checkbox" id="nav-toggle" class="navbar-toggle" />
+            <label for="nav-toggle" class="navbar-burger" aria-label="Menu">&#9776;</label>
+            <ul class="navbar-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#pricing">Precio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section data-role="hero" class="hero-panel">
+            <picture>
+                <source srcset="https://picsum.photos/id/3/1300/640" media="(min-width: 1025px)" />
+                <img src="https://picsum.photos/id/3/640/640" alt="Hero panel image" />
+            </picture>
+            <div data-role="hero-cta" class="hero-card">
+                <h2>Inscribete en este curso, es impresionante!!</h2>
+                <a href="#pricing">Inscribete aqui</a>
+            </div>
+        </section>
+        <section data-role="pricing" id="pricing" class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="card-holder">
+                <div data-role="card" class="card">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://placehold.co/320x200" alt="Card 1" />
+                    </div>
+                    <div data-role="card-body" class="card-body">
+                        <h3>Plan A</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                        <em>L1,000.00</em>
+                    </div>
+                    <div data-role="card-footer" class="card-footer">
+                        <a href="#addToCart">Suscribirse</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card suggested">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://placehold.co/320x200" alt="Card 2" />
+                    </div>
+                    <div data-role="card-body" class="card-body">
+                        <h3>Plan B</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                        <em>L5,000.00</em>
+                    </div>
+                    <div data-role="card-footer" class="card-footer">
+                        <a href="#addToCart">Suscribirse</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://placehold.co/320x200" alt="Card 3" />
+                    </div>
+                    <div data-role="card-body" class="card-body">
+                        <h3>Plan C</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                        <em>L10,000.00</em>
+                    </div>
+                    <div data-role="card-footer" class="card-footer">
+                        <a href="#addToCart">Suscribirse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-role="half-inverted" id="nosotros" class="half-panel">
+            <div class="half-panel-item">
+                <div class="half-text">
+                    <h2>Aprende a tu ritmo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad consequatur inventore cum
+                        deserunt explicabo? Blanditiis facere, sunt porro, praesentium maxime delectus ut dicta.</p>
+                    <a href="#pricing">Ver planes</a>
+                </div>
+                <div class="half-image">
+                    <img src="https://picsum.photos/id/20/800/500" alt="Imagen 1" />
+                </div>
+            </div>
+            <div class="half-panel-item inverted">
+                <div class="half-text">
+                    <h2>Comunidad y soporte</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad consequatur inventore cum
+                        deserunt explicabo? Blanditiis facere, sunt porro, praesentium maxime delectus ut dicta.</p>
+                    <a href="#contacto">Contáctanos</a>
+                </div>
+                <div class="half-image">
+                    <img src="https://picsum.photos/id/60/800/500" alt="Imagen 2" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="footer-copy">Copyright &copy; 2026</div>
+        <ul class="footer-social">
+            <li>Facebook</li>
+            <li>X</li>
+            <li>TikTok</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+        </ul>
+    </footer>
+</body>

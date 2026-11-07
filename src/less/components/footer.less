@@ -1,0 +1,40 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: @space-lg;
+  padding: @space-xl @space-lg;
+  background: @color-dark;
+  color: @color-white;
+  text-align: center;
+
+  a {
+    color: @color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: @color-accent;
+    }
+  }
+
+  .footer-social,
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: @space-md;
+  }
+
+  .tablet-up({
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: left;
+
+    .footer-social {
+      justify-content: center;
+    }
+
+    .footer-nav {
+      justify-content: flex-end;
+    }
+  });
+}
